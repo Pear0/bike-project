@@ -13,4 +13,5 @@ the `Tools->Board Type` should be set to "Lilypad Arduino".
 | `Tools->Processor` | `ATmega328P` |
 | `Tools->Programmer` | `AVR ISP` |
 
+Because the controller does not have an onboard programmer, an external programmer is necessary. I use the [SparkFun FTDI Basic Breakout - 3.3V](https://www.sparkfun.com/products/9873) but any programmer should work as long as the pinout of the programmer matches the programming header on the controller.
 
