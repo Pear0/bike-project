@@ -3,14 +3,14 @@
 #include "reed_switch.h"
 #include "timers.h"
 
-const int BUFFER_SIZE = 50;
+const int BUFFER_SIZE = 4 * 50;
 const int NUM_RELAYS = 4;
 
 // How much "history" in seconds should be stored in the buffer.
-const double MEMORY_TIME = 2;
+const double MEMORY_TIME = 4;
 
-int relayPins[] = {4, 5, 6, 7};
-int relayThreshold[] = {60, 300, 450, 780}; // RPM
+int relayPins[] = {7, 6, 4, 5};
+int relayThreshold[] = {60, 200, 350, 420}; // RPM
 
 // A buffer for the number of reed switch activations at a time step.
 CircularBuffer<int, BUFFER_SIZE> reed_buffer;
