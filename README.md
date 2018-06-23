@@ -5,11 +5,11 @@ To compile and run this code, you first need to install the [vlpp library](https
 ## Programming the controller board
 
 Although the controller may resemble many of the larger Arduinos like the Uno and Due, it is based off of the Arduino Lilypad and therefore 
-the `Tools->Board Type` should be set to "Arduino Lilypad".
+the `Tools->Board Type` should be set to "Lilypad Arduino".
 
 | option | value |
 |--------|-------|
-| `Tools->Board Type` | `Arduino Lilypad` |
+| `Tools->Board Type` | `Lilypad Arduino` |
 | `Tools->Processor` | `ATmega328P` |
 | `Tools->Programmer` | `AVR ISP` |
 
