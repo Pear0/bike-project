@@ -25,7 +25,7 @@ public:
 
   void push(NumType value) {
     array_buffer[pointer++] = value;
-    max_fill = pointer;
+    max_fill = max(max_fill, pointer);
     pointer %= Capacity;
   }
 
